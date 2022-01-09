@@ -40,7 +40,7 @@ html {
 .avatar__picture {
   border-radius: 50%;
   border: 1.5rem solid #fff;
-  width: 250px;
+  width: 300px;
 }
 .contacts {
   display: flex;
