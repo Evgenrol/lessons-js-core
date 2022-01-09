@@ -24,29 +24,31 @@ html {
   padding-top: 2rem;
 }
 .person__info {
+  flex: 1 0 50%;
   padding-right: 2rem;
   margin-bottom: 2rem;
 }
 .person__contacts {
+  flex: 1 0 50%;
   margin-bottom: 2rem;
 }
 .person__details {
   font-family: Arial, Helvetica, sans-serif;
+  flex: 0 1 100%;
 }
 .avatar {
-  width: 100%;
   margin-right: 1rem;
 }
 .avatar__picture {
+  width: 400px;
   border-radius: 50%;
   border: 1.5rem solid #fff;
-  width: 300px;
   transition: 1s;
 }
 .avatar__picture:hover {
   transform: rotate(180deg);
   border: 1.5rem solid #fff;
-  width: 300px;
+  width: 400px;
 }
 .contacts {
   display: flex;
@@ -55,6 +57,7 @@ html {
   align-items: flex-start;
   margin-top: 100px;
   height: 100%;
+  line-height: 1.2;
 }
 .contacts__name {
   font-size: 2rem;
@@ -62,7 +65,7 @@ html {
 }
 .contacts__role {
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: bolder;
   margin-bottom: 2rem;
 }
 .contacts__item {
@@ -73,13 +76,14 @@ html {
   font-weight: bold;
 }
 .contacts__title:after {
-  content: ": ";
+  content: ":";
 }
 .contacts__link {
-  color: gray;
+  color: grey;
 }
 .paragraph {
   line-height: 1.5;
+  font-weight: normal;
   text-align: left;
   margin-bottom: 1rem;
 }
