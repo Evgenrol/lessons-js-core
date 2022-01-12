@@ -10,6 +10,10 @@ html {
     rgba(0, 184, 63, 0.3) 91%
   );
   font-size: 16px;
+  background-image: url(112287.jpg);
+  /*background-size: ;
+  background-repeat: no-repeat;*/
+  animation: bg 30s ease-in-out infinite;
 }
 .person {
   width: 800px;
@@ -18,10 +22,23 @@ html {
   align-items: flex-start;
   flex-wrap: wrap;
   margin: 0 auto;
+  /*background-image: url(112287.jpg);
+  animation: bg 25s ease-in-out infinite;*/
 
   font-size: 1rem;
   font-family: Arial;
   padding-top: 2rem;
+}
+
+@keyframes bg {
+  0% {
+    background-size: 120%;
+    background-position: 50% 50%;
+  }
+  20% {
+    background-size: 150%;
+    background-position: 0 50%;
+  }
 }
 .person__info {
   flex: 1 0 50%;
