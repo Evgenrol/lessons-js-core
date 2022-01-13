@@ -131,7 +131,7 @@ html {
   content: ":";
 }
 .contacts__link {
-  color: grey;
+  color: rgb(75, 67, 67);
 }
 .paragraph {
   color: ivory;
