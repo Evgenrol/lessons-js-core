@@ -10,10 +10,8 @@ html {
     rgba(0, 184, 63, 0.3) 91%
   );
   font-size: 16px;
-  background-image: url(112287.jpg);
-  /*background-size: ;
-  background-repeat: no-repeat;*/
-  animation: bg 30s ease-in-out infinite;
+  background-image: url(grass.jpg);
+  animation: bg 40s ease-in-out;
 }
 .person {
   width: 800px;
@@ -22,9 +20,6 @@ html {
   align-items: flex-start;
   flex-wrap: wrap;
   margin: 0 auto;
-  /*background-image: url(112287.jpg);
-  animation: bg 25s ease-in-out infinite;*/
-
   font-size: 1rem;
   font-family: Arial;
   padding-top: 2rem;
@@ -38,6 +33,14 @@ html {
   20% {
     background-size: 150%;
     background-position: 0 50%;
+  }
+  40% {
+    background-size: 110%;
+    background-position: 20% 80%;
+  }
+  60% {
+    background-size: 160%;
+    background-position: 60% 10%;
   }
 }
 .person__info {
@@ -79,7 +82,15 @@ html {
 .contacts__name {
   font-size: 2rem;
   font-weight: bold;
-  background: linear-gradient(135deg, #8630ff 0%, #00ffff 50%, #3281ff 100%);
+  background: linear-gradient(
+    135deg,
+    #ff3033 0%,
+    #ff7130 20%,
+    #fff830 40%,
+    #19ff00 60%,
+    #8630ff 80%,
+    #3281ff 100%
+  );
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -99,7 +110,7 @@ html {
   font-weight: bolder;
   margin-bottom: 2rem;
   opacity: 0;
-  animation: ani 2.5s forwards;
+  animation: ani 3s forwards;
 }
 .contacts__item {
   list-style: none;
@@ -123,6 +134,7 @@ html {
   color: grey;
 }
 .paragraph {
+  color: ivory;
   line-height: 1.5;
   font-weight: normal;
   text-align: left;
