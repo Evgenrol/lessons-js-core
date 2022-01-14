@@ -1,0 +1,145 @@
+body,
+html {
+  width: 100%;
+  background: rgb(0, 255, 250);
+  background: linear-gradient(
+    15deg,
+    rgba(0, 255, 250, 0.1) 0%,
+    rgba(217, 255, 142, 0.2) 37%,
+    rgba(214, 255, 154, 0.3) 57%,
+    rgba(0, 184, 63, 0.3) 91%
+  );
+  font-size: 16px;
+  background-image: url(grass.jpg);
+  animation: bg 40s ease-in-out infinite;
+}
+.person {
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  font-size: 1rem;
+  font-family: Arial;
+  padding-top: 2rem;
+}
+
+@keyframes bg {
+  0% {
+    background-size: 120%;
+    background-position: 50% 50%;
+  }
+  20% {
+    background-size: 150%;
+    background-position: 0 50%;
+  }
+  40% {
+    background-size: 110%;
+    background-position: 20% 80%;
+  }
+  60% {
+    background-size: 160%;
+    background-position: 60% 10%;
+  }
+}
+.person__info {
+  flex: 1 0 50%;
+  padding-right: 2rem;
+  margin-bottom: 2rem;
+}
+.person__contacts {
+  flex: 1 0 50%;
+  margin-bottom: 2rem;
+}
+.person__details {
+  font-family: Arial, Helvetica, sans-serif;
+  flex: 0 1 100%;
+}
+.avatar {
+  margin-right: 1rem;
+}
+.avatar__picture {
+  width: 400px;
+  border-radius: 50%;
+  border: 1.5rem solid #fff;
+  transition: 1s;
+}
+.avatar__picture:hover {
+  transform: rotate(180deg);
+  border: 1.5rem solid #fff;
+  width: 400px;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 100px;
+  height: 100%;
+  line-height: 1.2;
+}
+.contacts__name {
+  font-size: 2rem;
+  font-weight: bold;
+  background: linear-gradient(
+    135deg,
+    #ff3033 0%,
+    #ff7130 20%,
+    #fff830 40%,
+    #19ff00 60%,
+    #8630ff 80%,
+    #3281ff 100%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue-change 3s infinite;
+}
+
+@keyframes hue-change {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+.contacts__role {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  margin-bottom: 2rem;
+  opacity: 0;
+  animation: ani 3s forwards;
+}
+.contacts__item {
+  list-style: none;
+  font-style: italic;
+}
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.contacts__title {
+  font-weight: bold;
+}
+.contacts__title:after {
+  content: ":";
+}
+.contacts__link {
+  color: rgb(75, 67, 67);
+}
+.paragraph {
+  color: ivory;
+  line-height: 1.5;
+  font-weight: normal;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.paragraph_last {
+  margin-bottom: 3rem;
+}
